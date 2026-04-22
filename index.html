@@ -1,15 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
   <head>
     <title>LA TV Shows | Home</title>
     <meta name="description" content="A Catalog of Shows Set in Los Angeles" />
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="scripts.js"></script>
+    <script type="module" src="scripts.js"></script>
   </head>
 
   <body>
     <header class="main-header">
       <h1 class="title">LA TV Shows</h1>
+      <form id="show-form">
+        <label for="showTitle">
+          Show Title
+          <input type="text" name="title" id="showTitle" />
+        </label>
+        <button type="submit">Search</button>
+      </form>
+      <button id="asc-order">Sort &#8593;</button>
+      <button id="desc-order">Sort &#8595;</button>
+      <button id="family">Family Friendly</button>
     </header>
     <div id="card-container"></div>
     <div class="card" style="display: none">
@@ -24,8 +34,8 @@
       </div>
     </div>
     <div class="footer">
-      <button onclick="quoteAlert()">Get A Quote!</button>
-      <button onclick="removeLastCard()">Remove A Card!</button>
+      <button id="quote-button">Get A Quote!</button>
+      <button id="remove-card">Remove A Card!</button>
     </div>
   </body>
 </html>

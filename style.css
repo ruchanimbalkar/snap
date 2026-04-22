@@ -68,3 +68,10 @@ button {
   cursor: pointer;
   margin: 5px;
 }
+
+form label {
+  margin-left: 1rem;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
